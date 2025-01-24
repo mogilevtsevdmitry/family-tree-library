@@ -1,0 +1,17 @@
+.canvas-container {
+  position: relative;
+  width: 100vw; /* Занимает всю ширину окна */
+  height: 100vh; /* Занимает всю высоту окна */
+  overflow: hidden; /* Прячем содержимое за границами контейнера */
+  cursor: grab; /* Курсор для перетаскивания */
+}
+
+canvas {
+  display: block;
+  background-color: white;
+  border: 1px solid #ccc;
+  transform-origin: 0 0; /* Начало трансформации в верхний левый угол */
+  position: absolute; /* Позволяет перемещать canvas */
+  width: 100vw; /* Занимает всю ширину окна */
+  height: 100vh; /* Занимает всю высоту окна */
+}
