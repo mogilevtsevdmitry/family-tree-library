@@ -9,6 +9,9 @@
     "paths": {
       "family-tree": [
         "./dist/family-tree"
+      ],
+      "family-tree-new": [
+        "./dist/family-tree-new"
       ]
     },
     "noPropertyAccessFromIndexSignature": true,
