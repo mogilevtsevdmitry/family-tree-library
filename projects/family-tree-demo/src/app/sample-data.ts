@@ -1,4 +1,4 @@
-import {TreeNodes} from './interface';
+import { TreeNodes } from './interface';
 
 export const familyData: TreeNodes = {
   me: {
@@ -18,7 +18,7 @@ export const familyData: TreeNodes = {
       firstName: 'Александр',
       lastName: 'Могилевцев',
       middleName: 'Васильевич',
-      birthDate: '1964-06-20',
+      birthDate: '1964-06-30',
       deathDate: null,
       gender: 'MALE',
       relation: 'FATHER',

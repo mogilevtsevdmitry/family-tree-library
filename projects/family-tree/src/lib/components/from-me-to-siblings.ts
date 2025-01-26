@@ -1,16 +1,16 @@
-import { LINE_COLOR, RECT_HEIGHT } from '../constant'
+import { LINE_COLOR } from '../constant';
 
-export function fromMeToSiblings(ctx: CanvasRenderingContext2D, person: any, x: number, y: number) {
-  const fromY = y + RECT_HEIGHT / 2
-  const toX = x - RECT_HEIGHT / 2
-  const toY = fromY
-
+export function fromMeToSiblings(
+  ctx: CanvasRenderingContext2D,
+  fromX: number,
+  toX: number,
+  y: number,
+) {
   // Установка цвета линии
-  ctx.strokeStyle = LINE_COLOR
+  ctx.strokeStyle = LINE_COLOR;
+  ctx.beginPath();
+  ctx.moveTo(fromX, y);
+  ctx.lineTo(toX, y);
 
-  // Рисуем линию
-  ctx.beginPath()
-  ctx.moveTo(x, fromY)
-  ctx.lineTo(toX, toY)
-  ctx.stroke()
+  ctx.stroke();
 }
