@@ -9,7 +9,7 @@ export type Relation =
   | 'BROTHER'
   | 'SISTER';
 
-export interface TreeNode {
+export interface FamilyMember {
   id: number;
   firstName: string;
   lastName: string;
@@ -21,9 +21,9 @@ export interface TreeNode {
   relation: Relation | null;
 }
 
-export interface TreeNodes {
-  me: TreeNode;
-  parents: TreeNode[];
-  children: TreeNode[];
-  spouseAndSiblings: TreeNode[];
+export interface FamilyMembers {
+  me: FamilyMember;
+  parents: FamilyMember[];
+  children: FamilyMember[];
+  spouseAndSiblings: FamilyMember[];
 }

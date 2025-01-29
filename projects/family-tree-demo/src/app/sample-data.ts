@@ -1,6 +1,6 @@
-import { TreeNodes } from './interface';
+import { FamilyMembers } from '../../../family-tree-new/src/lib/interfaces'
 
-export const familyData: TreeNodes = {
+export const familyData: FamilyMembers = {
   me: {
     id: 1,
     firstName: 'Дмитрий',

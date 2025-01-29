@@ -1,0 +1,16 @@
+<div class="tree-container">
+  <ng-container *ngIf="familyMembers">
+    <lib-person-card
+      [person]="familyMembers.me"
+      (personClick)="onPersonClick($event)"
+      (addRelative)="onAddRelative()"
+    ></lib-person-card>
+  </ng-container>
+</div>
+
+<dialog #addPersonDialog class="dialog">
+  <lib-add-person-form
+    (submitForm)="onDialogSubmit($event)"
+    (cancel)="onDialogCancel()"
+  ></lib-add-person-form>
+</dialog>

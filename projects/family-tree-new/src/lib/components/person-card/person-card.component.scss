@@ -1,0 +1,24 @@
+.person-card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px;
+  background-color: var(--background-color);
+  cursor: pointer;
+  margin: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.person-card:hover {
+  background-color: var(--hover-background-color);
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+button {
+  margin: 2px;
+  padding: 5px;
+  cursor: pointer;
+}

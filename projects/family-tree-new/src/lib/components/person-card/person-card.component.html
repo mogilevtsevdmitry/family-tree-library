@@ -1,0 +1,9 @@
+<div class="person-card" (click)="onPersonClick()">
+  <div class="person-info">
+    <h3>{{ person.firstName }} {{ person.lastName }}</h3>
+    <p>{{ person.birthDate | date:'shortDate': undefined: 'ru' }}{{ person.deathDate && ' - ' + (person.deathDate | date:'shortDate': undefined: 'ru') }}</p>
+  </div>
+  <div class="actions">
+    <button (click)="onAddRelative(); $event.stopPropagation()">Добавить связь</button>
+  </div>
+</div>
